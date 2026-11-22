@@ -1,45 +1,199 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#080812">
-  <title>V-ST4RS | Download</title>
-  <style>
-    * { box-sizing: border-box; }
-    body {
-      margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center;
-      padding: 24px; font-family: Arial, Helvetica, sans-serif; color: #f5f3ff;
-      background: radial-gradient(circle at 50% 15%, #29204d 0, #111020 35%, #080812 75%);
-    }
-    .wrap { width: 100%; max-width: 420px; text-align: center; }
-    .logo {
-      width: 92px; height: 92px; margin: 0 auto 22px; border-radius: 26px;
-      display: flex; align-items: center; justify-content: center;
-      background: linear-gradient(145deg, #8b5cf6, #5426bd); box-shadow: 0 12px 40px #7c3aed55;
-      font-size: 32px; font-weight: 900; letter-spacing: -2px;
-    }
-    h1 { font-size: 30px; letter-spacing: 2px; margin: 0 0 12px; }
-    p { color: #b9b4cc; line-height: 1.6; font-size: 15px; margin: 0 auto 28px; }
-    .download {
-      display: block; width: 100%; padding: 17px 20px; border-radius: 15px; text-decoration: none;
-      color: white; font-size: 16px; font-weight: 800; letter-spacing: 1px;
-      background: linear-gradient(90deg, #7c3aed, #5b35d5); box-shadow: 0 8px 28px #6d28d955;
-      transition: transform .15s, filter .15s;
-    }
-    .download:active { transform: scale(.98); filter: brightness(.9); }
-    .note { font-size: 12px; color: #77728b; margin-top: 18px; }
-    footer { color: #625d76; font-size: 12px; margin-top: 46px; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>V-ST4RS | Percantik Video Affiliate</title>
+<meta name="description" content="V-ST4RS - Aplikasi peningkat kualitas video 720P, 1080P dan 2K.">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  background:#08090c;
+  color:#fff;
+  font-family:Arial,sans-serif;
+}
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:22px 8%;
+  border-bottom:1px solid #252019;
+}
+.logo{
+  color:#e2b44e;
+  font-size:25px;
+  font-weight:900;
+  letter-spacing:2px;
+}
+nav a{
+  color:#bbb;
+  text-decoration:none;
+  margin-left:22px;
+  font-size:14px;
+}
+.hero{
+  min-height:80vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:50px 20px;
+  background:radial-gradient(ellipse at center,#30230e 0%,#08090c 65%);
+}
+.tag{
+  color:#e2b44e;
+  border:1px solid #806027;
+  padding:9px 18px;
+  border-radius:30px;
+  font-size:12px;
+  letter-spacing:2px;
+  margin-bottom:25px;
+}
+h1{
+  font-size:clamp(38px,8vw,72px);
+  line-height:1.1;
+  font-weight:900;
+}
+h1 span{color:#e2b44e}
+.hero p{
+  color:#aaa;
+  max-width:500px;
+  line-height:1.7;
+  margin:22px 0 32px;
+}
+.btn{
+  display:inline-block;
+  background:linear-gradient(135deg,#f5d17c,#b77c20);
+  color:#111;
+  padding:17px 35px;
+  border-radius:9px;
+  text-decoration:none;
+  font-weight:900;
+  letter-spacing:1px;
+  box-shadow:0 5px 25px #b77c2040;
+}
+.btn:hover{transform:translateY(-3px)}
+section{
+  padding:75px 8%;
+  text-align:center;
+}
+.section-title{
+  font-size:30px;
+  margin-bottom:15px;
+}
+.section-title span{color:#e2b44e}
+.subtitle{color:#888;margin-bottom:40px}
+.features{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:18px;
+}
+.feature{
+  background:#111216;
+  border:1px solid #29251d;
+  padding:30px 15px;
+  border-radius:14px;
+}
+.feature h2{
+  color:#e2b44e;
+  font-size:27px;
+  margin-bottom:12px;
+}
+.feature p{color:#999;font-size:14px}
+.about{
+  background:#101115;
+}
+.about p{
+  max-width:650px;
+  margin:auto;
+  color:#aaa;
+  line-height:1.8;
+}
+.download{
+  background:radial-gradient(ellipse at center,#30230e,#08090c 70%);
+}
+.download p{color:#aaa;margin:18px 0 30px}
+footer{
+  padding:25px;
+  text-align:center;
+  color:#666;
+  border-top:1px solid #252019;
+  font-size:13px;
+}
+@media(max-width:600px){
+  header{padding:18px 5%}
+  nav a{margin-left:10px;font-size:12px}
+  .logo{font-size:20px}
+}
+</style>
 </head>
 <body>
-  <main class="wrap">
-    <div class="logo">V</div>
-    <h1>V-ST4RS</h1>
-    <p>Download aplikasi V-ST4RS.<br>Tekan tombol di bawah untuk mengunduh APK.</p>
-    <a class="download" href="https://github.com/mrandrian018-maker/v-st4rs-download/releases/latest/download/V-ST4RS.apk" download>DOWNLOAD APK</a>
-    <div class="note">Android APK • V-ST4RS</div>
-    <footer>© V-ST4RS</footer>
-  </main>
+
+<header>
+  <div class="logo">✦ V-ST4RS</div>
+  <nav>
+    <a href="#fitur">Fitur</a>
+    <a href="#tentang">Tentang</a>
+    <a href="#download">Download</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <div class="tag">VIDEO ENHANCER APP</div>
+  <h1>PERCANTIK VIDEO<br><span>AFFILIATE</span></h1>
+  <p>
+    Tingkatkan kualitas video kamu dengan V-ST4RS.
+    Pilih resolusi 720P, 1080P hingga 2K dengan tampilan yang simpel.
+  </p>
+  <a href="#download" class="btn">DOWNLOAD SEKARANG</a>
+</div>
+
+<section id="fitur">
+  <h2 class="section-title">FITUR <span>UNGGULAN</span></h2>
+  <p class="subtitle">Buat video tampil lebih maksimal.</p>
+  <div class="features">
+    <div class="feature">
+      <h2>720P</h2>
+      <p>Resolusi HD</p>
+    </div>
+    <div class="feature">
+      <h2>1080P</h2>
+      <p>Full HD</p>
+    </div>
+    <div class="feature">
+      <h2>2K</h2>
+      <p>Resolusi tinggi</p>
+    </div>
+    <div class="feature">
+      <h2>FAST</h2>
+      <p>Proses mudah dan praktis</p>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="tentang">
+  <h2 class="section-title">TENTANG <span>V-ST4RS</span></h2>
+  <p>
+    V-ST4RS adalah aplikasi Android untuk membantu meningkatkan
+    resolusi dan tampilan video, khususnya konten affiliate.
+    Dibuat dengan desain sederhana agar mudah digunakan.
+  </p>
+</section>
+
+<section class="download" id="download">
+  <h2 class="section-title">DOWNLOAD <span>V-ST4RS</span></h2>
+  <p>Siap percantik video kamu?</p>
+  <a href="LINK_DOWNLOAD_ZIP" class="btn">DOWNLOAD APLIKASI</a>
+  <p style="font-size:12px;margin-top:20px">
+    Android • ZIP terenkripsi • Password diberikan terpisah
+  </p>
+</section>
+
+<footer>
+  © 2026 V-ST4RS. All Rights Reserved.
+</footer>
+
 </body>
 </html>
